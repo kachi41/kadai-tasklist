@@ -43,7 +43,7 @@ public class UpdateServlet extends HttpServlet {
 
             //更新日時のみ上書き
             Timestamp currentTime = new Timestamp(System.currentTimeMillis());
-            t.setUpdate_at(currentTime);
+            t.setUpdated_at(currentTime);
 
             //データベースの更新
             em.getTransaction().begin();
